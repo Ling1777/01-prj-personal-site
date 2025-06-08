@@ -1,1 +1,84 @@
 /* Add you CSS here */
+
+/* Set the background color of the whole page */
+body {
+  /* Set a dark green background color */
+  background-color: #014421; /* dark green */
+  /* Remove the background image */
+  /* background-image: none; */
+  /* The rest of the settings help the color fill the page */
+  min-height: 100vh;             /* Make sure the background covers the full viewport height */
+  margin: 0;                     /* Remove default margin */
+}
+
+/* Navigation bar styles */
+nav {
+  background-color: #ffffff; /* Set nav bar background to white */
+  padding: 10px 0;           /* Add some space above and below the links */
+  font-family: Arial, sans-serif; /* Set a simple font for the nav bar */
+  font-size: 1.1em;               /* Set the same font size for all nav content */
+  overflow: hidden;               /* Clear floats inside nav */
+}
+
+/* Style for your name on the left of the navigation bar */
+.nav-name {
+  color: darkgreen;          /* Set name color to dark green */
+  font-weight: bold;         /* Make the name bold */
+  margin-left: 20px;         /* Add some space to the left */
+  float: left;               /* Move the name to the left */
+  line-height: 40px;         /* Align vertically with nav links */
+  font-family: inherit;      /* Inherit font from nav */
+  font-size: inherit;        /* Inherit font size from nav */
+}
+
+/* Navigation links on the right in the same line */
+nav ul {
+  list-style-type: none;   /* Remove bullets */
+  margin: 0;
+  padding: 0;
+  text-align: right;       /* Align links to the right */
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 40px;
+  padding-right: 40px;     /* Move the links a little bit to the left */
+}
+
+/* Show the links in a row */
+nav ul li {
+  display: inline;         /* Display links in a line */
+  margin-left: 20px;       /* Add space between links */
+}
+
+/* Set the link color to dark green */
+nav ul li a {
+  color: darkgreen;        /* Set link color */
+  text-decoration: none;   /* Remove underline */
+  font-size: inherit;      /* Inherit font size from nav */
+  font-family: inherit;    /* Inherit font from nav */
+}
+
+/* Style the main heading */
+h1 {
+  font-size: 2.5em;      /* Make the text bigger */
+  text-align: center;    /* Center the text */
+  color: #dc372b;        /* Set the text color */
+}
+
+/* Style the subheading */
+h2 {
+  font-size: 2em;        /* Make the text bigger */
+  text-align: center;    /* Center the text */
+  color: #f1af20;        /* Set the text color */
+}
+
+/* Style the paragraph */
+p {
+  font-size: 1.2em;      /* Make the paragraph text bigger */
+  line-height: 1.6;      /* Add more space between lines */
+  color: #007f4e;        /* Set the paragraph text color */
+}
+
+/* Style the programming skills section to white */
+h3, ul {
+  color: #ffffff;        /* Set the text color to white */
+}

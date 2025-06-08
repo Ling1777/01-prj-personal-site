@@ -4,8 +4,115 @@
   <meta charset="UTF-8">
   <title>My Personal Site</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Add Font Awesome for the Python icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- Navigation bar at the top of the page -->
+  <nav>
+    <!-- Add your name on the left side -->
+    <span class="nav-name">Chenling Zheng</span>
+    <ul>
+      <!-- The "Home" link points to this page -->
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Skills</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main content for the Home page -->
+
+  <!-- Show the background image below the navigation bar -->
+  <!-- The image is inside the img folder -->
+  <!-- We use a simple container to help position the text on the image -->
+  <div style="position: relative; text-align: center;">
+    <!-- Background image -->
+    <img src="img/background picture of the main page.jpg" alt="Background" style="display:block; margin: 20px auto; max-width: 90%;">
+    
+    <!-- h1 covers the image using absolute positioning, color is ash rose, and moved slightly upwards -->
+    <h1 style="
+      position: absolute;           /* Take out of normal flow to cover image */
+      top: 30%;                    /* Move to slightly above the vertical center */
+      left: 50%;                   /* Move to horizontal center of the image */
+      transform: translate(-50%, -50%); /* Center exactly */
+      color: #d8a39d;              /* Ash rose color */
+      margin: 0;
+      width: 100%;
+      font-size: 5em;
+      ">
+      Hi, I'm Chenling!
+    </h1>
+
+    <!-- h2, h3, and p are now below the image and centered -->
+    <h2 style="
+      color: #d8a39d;           /* Ash rose color */
+      margin: 10px 0 0 0;      /* Add space above the skills section */
+      font-size: 3em;
+      ">
+      Chenling Zheng<br>
+      Beginner Web Developer
+    </h2>
+    <p style="
+      color: #d8a39d;           /* Ash rose color */
+      width: 80%;
+      margin: 0 auto 30px auto; /* Add space below the bio */
+      font-size: 1.1em;
+      ">
+      Hello! My name is Chenling Zheng. I am just starting to learn web development. I am especially interested in making web pages interactive for users. I enjoy seeing how small changes in code can make a big difference on a website. I am excited to keep learning and create more interesting projects as I improve my skills.
+    </p>
+    <h3 style="
+      color: #d8a39d;           /* Ash rose color */
+      margin: 30px 0 0 0;      /* Add space above the skills section */
+      font-size: 3em;
+      ">
+      My Programming Skills
+    </h3>
+  </div>
+  <!-- Programming skills section -->
+  <!-- The skills list is centered using a parent div and simple CSS -->
+  <div style="text-align: center;">
+    <!-- 
+      We use 'list-style: none' to remove bullet points.
+      We use 'display: inline-block; margin-right: 20px;' on each <li> to put them in the same line and add spacing.
+      Each skill has its icon above the text.
+    -->
+    <ul style="color: #d8a39d; list-style: none; padding: 0; margin: 20px 0 0 0;">
+      <li style="display: inline-block; margin-right: 20px;">
+        <!-- JavaScript icon above the text -->
+        <div style="text-align: center;">
+          <i class="fa-brands fa-js" style="font-size: 2em; display: block;"></i>
+          JavaScript
+        </div>
+      </li>
+      <li style="display: inline-block; margin-right: 20px;">
+        <!-- CSS icon above the text -->
+        <div style="text-align: center;">
+          <i class="fa-brands fa-css3-alt" style="font-size: 2em; display: block;"></i>
+          CSS
+        </div>
+      </li>
+      <li style="display: inline-block; margin-right: 20px;">
+        <!-- HTML icon above the text -->
+        <div style="text-align: center;">
+          <i class="fa-brands fa-html5" style="font-size: 2em; display: block;"></i>
+          HTML
+        </div>
+      </li>
+      <li style="display: inline-block; margin-right: 20px;">
+        <!-- R Project icon above the text -->
+        <div style="text-align: center;">
+          <i class="fa-brands fa-r-project" style="font-size: 2em; display: block;"></i>
+          R programming language
+        </div>
+      </li>
+      <li style="display: inline-block;">
+        <!-- Python icon above the text -->
+        <div style="text-align: center;">
+          <i class="fa-brands fa-python" style="font-size: 2em; display: block;"></i>
+          Python
+        </div>
+      </li>
+    </ul>
+  </div>
 </body>
 </html>
